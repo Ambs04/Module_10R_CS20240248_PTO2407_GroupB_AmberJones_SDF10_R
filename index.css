@@ -16,9 +16,13 @@ html, body {
 
 
 img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    align-self: center;
     
 }
-*/
+
 
 input {
     font-size: 20px;
