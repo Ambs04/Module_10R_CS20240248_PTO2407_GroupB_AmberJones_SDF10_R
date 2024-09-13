@@ -30,7 +30,7 @@ onValue(shoppingListInDB, function(snapshot) {
 
     if (snapshot.exists()) {
 
-        let itemsInArray = Object.values(snapshot.val())
+        let itemsInArray = Object.entries(snapshot.val())
 
         clearShoppingListEl()
 
