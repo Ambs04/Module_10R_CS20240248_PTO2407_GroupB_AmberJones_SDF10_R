@@ -1,4 +1,57 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #eef0f4;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 3em auto;
+    max-width: 440px;
+
+}
+
+/*ADD IMAGE
+img {
+
+}
+*/
+
+input {
+    font-size: 20px;
+    border-radius : 8px;
+    padding: 15px;
+    margin-top: .5em;
+    text-align: center;
+    background-color: #dce1eb;
+    color: #432000;
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: .5em;
+    text-align: center;
+    background-color: #ac485a;
+    color: #fdfdfd;
+}
+
+ul {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+ul li {
+    font-size: 20px;
+    background-color: #fffdf8;
+    box-shadow: 0px 1px 1px rgb(0 0 0 0.2);
+    list-style: none;
+    flex-grow: 1;
+    padding: 15px;
+    color: #432000;
 }
