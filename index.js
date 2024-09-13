@@ -7,7 +7,7 @@ const appSettings = {
 }
 
 //DATABASE DECLARATIONS
-const app = initializeApp(appsettings)
+const app = initializeApp(appSettings)
 const database = getDatabase(app)
 const shoppingListInDB = ref(database, "shoppingList")
 
@@ -22,6 +22,7 @@ addButtonEl.addEventListener("click", function() {
     
     push(shoppingListInDB, inputValue)
 
+    clearInputField()
 
 })
 
@@ -31,17 +32,19 @@ onValue(shoppingListInDB, function(snapshot) {
 
         let itemsInArray = Object.values(snapshot.val())
 
-        
+        clearShoppingListEl()
+
         for (let i = 0; i < itemsInArray.length; i++) {
 
             let currentItem = itemsInArray[i]
             let currentItemID = currentItem[0]
             let currentItemValue = currentItem[1]
 
-            
+            addItemToShoppingList(itemsInArray[i])
+
         }
     }else {
-
+        shoppingListEl.innerHTML = "No items are here... yet"
     }
 
 })
@@ -60,7 +63,7 @@ function addItemToShoppingList(item) {
     let itemValue = item[1]
     let newElement = document.createElement("li")
 
-    newElement.textContent += itenValue
+    newElement.textContent += itemValue
 
     newElement.addEventListener("click", function() {
         
