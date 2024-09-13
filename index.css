@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #eef0f4;
+    user-select: none;
 }
 
 .main {
@@ -50,7 +51,7 @@ ul li {
     font-size: 20px;
     background-color: #fffdf8;
     box-shadow: 0px 1px 1px rgb(0 0 0 0.2);
-    list-style: none;
+    list-style-type: none;
     flex-grow: 1;
     padding: 15px;
     color: #432000;

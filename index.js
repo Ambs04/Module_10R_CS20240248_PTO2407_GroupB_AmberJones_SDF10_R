@@ -63,7 +63,7 @@ function addItemToShoppingList(item) {
     let itemValue = item[1]
     let newElement = document.createElement("li")
 
-    newElement.textContent += itemValue
+    newElement.textContent = itemValue
 
     newElement.addEventListener("click", function() {
         
