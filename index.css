@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     background-color: #eef0f4;
     user-select: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 .main {
