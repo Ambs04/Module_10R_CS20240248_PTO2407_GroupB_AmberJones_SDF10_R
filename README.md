@@ -79,5 +79,7 @@ Once you've completed and tested your app:
 
 Dive into game development with this project. Enjoy learning, applying your knowledge, and overcoming challenges along the way! You're welcome to take this project to the next level and deploy to Netlify after you have submitted. 
 
+### FIND MY EXPLANATION VIDEO BELOW:
 
+https://drive.google.com/file/d/1avdbEeED0QAvnpcI5PI3DaUeEleqG84J/view?usp=drive_link
 
